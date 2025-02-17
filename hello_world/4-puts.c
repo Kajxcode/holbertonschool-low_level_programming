@@ -7,8 +7,10 @@
 
 /**
  * main - entry point
- * description: 'print sentence'
- * return: always 0 (success)
+ *
+ * Description: 'print sentence'
+ *
+ * Return: always 0 (success)
  */
 
 int main(void)
