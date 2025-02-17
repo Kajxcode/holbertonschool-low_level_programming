@@ -1,9 +1,16 @@
+/*
+ * file name: 4-puts.c
+ * made by kaj.c
+ */
+
 #include <stdio.h>
 
 /**
- * main prints phrase programming is like building a multilingual puzzle
- * returns 0 if exited properly
+ * main - entry point
+ * description: 'print sentence'
+ * return: always 0 (success)
  */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
