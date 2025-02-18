@@ -2,6 +2,7 @@
  * file name: 0-positive_or_negative.c
  * made by kaj.c
  */
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -22,7 +23,7 @@ int main(void)
 	}
 	else if ( n == 0)
 	{
-		"printf("%d is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
