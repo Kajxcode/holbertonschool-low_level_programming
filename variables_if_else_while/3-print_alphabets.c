@@ -1,9 +1,6 @@
-/*
- * made by kaj.c
- */
 #include<stdio.h>
 /**
- * main entry point
+ * main - entry point
  *
  * Return: alwasy (success)
  */
