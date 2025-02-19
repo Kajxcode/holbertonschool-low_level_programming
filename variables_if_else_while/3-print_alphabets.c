@@ -1,3 +1,6 @@
+/*
+ * made by kaj.c
+ */
 #include<stdio.h>
 /**
  * main entry point
