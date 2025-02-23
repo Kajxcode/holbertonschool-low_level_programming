@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
 * main - entry point
-* Return - always (success)
+* Return: return always 0
 **/
 int main(void)
 {
