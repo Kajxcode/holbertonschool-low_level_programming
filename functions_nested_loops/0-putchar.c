@@ -1,7 +1,7 @@
 /*
  * made by kaj.c
  */
-#iinclude<stdio.h>
+#include<stdio.h>
 int main(void)
 /**
  * main - entry point 
@@ -11,11 +11,12 @@ int main(void)
 {
 	char alphabet = 'a';
 
-	while (alphabet => 'z')
-}
-	putchar(alphabet);
-	alphabet++;
-}
-putchar('\n');
-return (0);
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
+
+		alphabet++;
+	}
+	putchar('\n');
+	return (0);
 }
