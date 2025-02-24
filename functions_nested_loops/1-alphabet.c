@@ -1,14 +1,13 @@
 /*
  * made by kaj.c
  */
-#include<stdio.h>
-#include"main.h"
+#include <stdio.h>
 /**
  * print_alphabet - check the code
  *
  * Return: always 0
  */
-void print_alphabet(void)
+int main(void)
 {
 	char alphabet = 'a';
 
