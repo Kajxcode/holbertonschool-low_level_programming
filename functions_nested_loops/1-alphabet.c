@@ -2,21 +2,17 @@
  * made by kaj.c
  */
 #include <stdio.h>
+#include "main.h"
 /**
  * print_alphabet - check the code
  *
  * Return: always 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	char alphabet = 'a';
+	int i;
 
-	while (alphabet <= 'z')
-	{
-		putchar(alphabet);
-
-		alphabet++;
-	}
+	for (i = 'a' <= 'z'; i++)
+		putchar(i);
 	putchar('\n');
-	return (0);
 }
