@@ -1,7 +1,7 @@
 /*
 * made by kaj.c
 */
-#include "mainh"
+#include "main.h"
 #include <stdio.h>
 /**
 * add - adds 2 numbers
