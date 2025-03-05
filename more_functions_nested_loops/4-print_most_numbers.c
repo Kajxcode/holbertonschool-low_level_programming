@@ -1,12 +1,18 @@
-include "main.h"
+#include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_most_numbers - print number 0 to 9
+ * Return: nothing
  */
-    int main(void)
+
+void print_most_numbers(void)
 {
-    print_most_numbers();
-    return (0);
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
+	{
+		if (c != '2' && c != '4')
+			_putchar(c);
+	}
+	_putchar('\n');
 }
