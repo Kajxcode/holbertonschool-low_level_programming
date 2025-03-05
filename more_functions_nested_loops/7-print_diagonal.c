@@ -12,14 +12,14 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
-		for (ro = 1; <= n; ro++)
+		for (ro = 1; ro <= n; ro++)
 		{
-			for (sp = 1; sp < co; sp++)
+			for (sp = 1; sp < ro; sp++)
 			{
-				for (sp = 1; sp < co; sp++)
+				for (sp = 1; sp < ro; sp++)
 					_putchar(' ');
 				_putchar('\\');
-				_purchar('\n');
+				_putchar('\n');
 			}
 		}
 	}
