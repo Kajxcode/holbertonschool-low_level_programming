@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* fizz_buzz - prints 0-100 printing fizz at multiples of 3 and buzz at multiples of 5, finally printing fizzbuzz at multiples of both
+* fizz_buzz - prints fizz buzz game to 100
 * Return: 0
 */
 int main(void)
