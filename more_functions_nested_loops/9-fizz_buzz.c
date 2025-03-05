@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* fizz_buzz - prints fizz buzz game to 100
+* main - prints fizz buzz game to 100
 * Return: 0
 */
 int main(void)
