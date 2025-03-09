@@ -5,7 +5,7 @@
 * @s: data from usr
 * Return: length of string
 */
-int _strlen(char* s)
+int _strlen(char *s)
 {
 	int i = 0, length = 0;
 
