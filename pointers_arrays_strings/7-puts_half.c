@@ -1,6 +1,9 @@
 #include <unistd.h>
 #include "main.h"
-
+/**
+* puts_half - puts end half of desired string
+* @str: string to print
+*/
 void puts_half(char *str)
 {
 	int len = 0;
