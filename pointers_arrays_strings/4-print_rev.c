@@ -6,7 +6,7 @@
 */
 void print_rev(char* s)
 {
-	int l = 0
+	int l = 0;
 	int r = strlen(s) - 1;
 	char t;
 
@@ -19,5 +19,5 @@ void print_rev(char* s)
 		l++;
 		r--;
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
