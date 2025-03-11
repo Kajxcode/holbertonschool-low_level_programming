@@ -15,5 +15,5 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (; i < n; i++)
 
-	return (dest)
+	return (dest);
 }
