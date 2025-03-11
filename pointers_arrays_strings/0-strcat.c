@@ -12,7 +12,7 @@ char *_strcat(char *dest, char *src)
 	while (*ptr)
 		ptr++;
 
-	while 
+	while
 		((*ptr++ = *src++));
 
 	return (dest);
