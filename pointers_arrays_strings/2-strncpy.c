@@ -6,9 +6,9 @@
 * @n: max num of bytes to copy
 * Return: ptr to resulting string dest
 */
-char* _strncpy(char* dest, char* src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int;
+	int i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
