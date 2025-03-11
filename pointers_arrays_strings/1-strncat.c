@@ -6,7 +6,7 @@
 * @n: number of bytes appended to dest
 * Return: ptr to dest
 */
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 	char *ptr = dest;
 	
