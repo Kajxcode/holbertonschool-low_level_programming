@@ -9,7 +9,7 @@ char *cap_string(char *str)
 	int i = 0;
 	char separators[] = " \t\n,;.!?\"(){}";
 
-	
+
 	if (str[i] >= 'a' && str[i] <= 'z')
 		str[i] -= 32;
 
