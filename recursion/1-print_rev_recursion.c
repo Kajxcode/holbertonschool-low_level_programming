@@ -6,7 +6,7 @@
  */
 void _print_rev_recursion(char *s)
 {
-aif (*s == '\0')
+if (*s == '\0')
 			return;
 
 	_print_rev_recursion(s + 1);
