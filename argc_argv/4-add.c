@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		char* ptr = argv[i];
+		char *ptr = argv[i];
 
 		while (*ptr)
 		{
