@@ -8,26 +8,26 @@
  */
 int main(int argc, char *argv[])
 {
-    int i, sum = 0;
+	int i, sum = 0;
 
-    for (i = 1; i < argc; i++)
-    {
-        char* ptr = argv[i];
+	for (i = 1; i < argc; i++)
+	{
+		char* ptr = argv[i];
 
-        while (*ptr)
-        {
-            if (*ptr < '0' || *ptr > '9')
-            {
-                printf("Error\n");
-                return (1);
-            }
-            ptr++;
-        }
+		while (*ptr)
+		{
+			if (*ptr < '0' || *ptr > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			ptr++;
+		}
 
-        sum += atoi(argv[i]);
-    }
+		sum += atoi(argv[i]);
+	}
 
-    printf("%d\n", sum);
+	printf("%d\n", sum);
 
-    return (0);
+	return (0);
 }
