@@ -5,9 +5,9 @@
  * @c: The character to initialize the array with
  * Return: Pointer to the array, or NULL if size is 0 or memory allocation fails
  */
-char* create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
-	char* arr
+	char *arr;
 		unsigned int i;
 
 	if (size == 0)
