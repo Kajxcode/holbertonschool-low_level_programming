@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include "dog.h"
  /**
-  * _strcopy - copy read-only data to mutable.
-  * @dst: pointer to copy char to.
-  * @src: read-only data.
+  * _strcopy - copy read-only data to mutable
+  * @dst: pointer to copy char to
+  * @src: read-only data
   */
+
 void _strcopy(char *dst, char *src)
 {
 	int i;
