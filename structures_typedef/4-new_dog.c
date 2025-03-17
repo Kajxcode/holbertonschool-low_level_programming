@@ -7,7 +7,7 @@
   * @dst: pointer to copy char to
   * @src: read-only data
   *
-  *new_dog - create a new
+  * new_dog - creates a new dog
   * @name: dog name
   * @age: dog age
   * @owner: owner name
