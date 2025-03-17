@@ -2,17 +2,19 @@
 #include <stdlib.h>
 #include "dog.h"
 
- /**
-  * _strcopy - copies a string from source to dest
-  * @dst: pointer to copy char to
-  * @src: read-only data
-  *
-  * new_dog - creates a new dog
-  * @name: dog name
-  * @age: dog age
-  * @owner: owner name
-  * Return: pointer to the new dog
-  */
+/**
+ * _strcopy - copies a string from source to dest
+ * @dst: pointer to copy char to
+ * @src: read-only data
+ */
+
+/**
+ * new_dog - creates a new dog
+ * @name: dog name
+ * @age: dog age
+ * @owner: owner name
+ * Return: pointer to the new dog
+ */
 void _strcopy(char *dst, char *src)
 {
 	int i;
