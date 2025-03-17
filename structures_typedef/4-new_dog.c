@@ -35,7 +35,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		;
 
 
-	ouaoua = malloc(sizeof(dog_t));
+	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
 
