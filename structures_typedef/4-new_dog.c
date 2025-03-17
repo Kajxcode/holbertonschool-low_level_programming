@@ -22,7 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 				free(d);
 				return (NULL);
 			}
-	strcopy(d->name, name);
+	strcpy(d->name, name);
 		}
 	else
 	{
@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	if (owner != NULL)
 	{
-		d->owner = malloc(strlen(owner) + 1)
+		d->owner = malloc(strlen(owner) + 1);
 			if (d-> == NULL)
 			{
 				free(d->name);
