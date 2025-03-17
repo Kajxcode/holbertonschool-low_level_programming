@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "dog.h"
  /**
-  * _strcopy - copy read-only data to mutable
+  * _strcopy - copies a string from source to dest
   * @dst: pointer to copy char to
   * @src: read-only data
   */
@@ -17,8 +17,7 @@ void _strcopy(char *dst, char *src)
 }
 
 /**
- * new_dog - create a new dog
- * _strcopy - copy read-only data to mutable
+ * new_dog - create a new
  * @name: dog name
  * @age: dog age
  * @owner: owner name
