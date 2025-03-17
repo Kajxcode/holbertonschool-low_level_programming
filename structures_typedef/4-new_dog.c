@@ -6,7 +6,7 @@
   * _strcopy - copies a string from source to dest
   * @dst: pointer to copy char to
   * @src: read-only data
-  * 
+  *
   *new_dog - create a new
   * @name: dog name
   * @age: dog age
