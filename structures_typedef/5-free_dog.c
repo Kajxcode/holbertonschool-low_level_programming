@@ -5,7 +5,7 @@
  * @d: dog
  * Return: void
  */
-void free_dog(dog_t* d)
+void free_dog(dog_t *d)
 {
 	if (d == 0)
 		return;
