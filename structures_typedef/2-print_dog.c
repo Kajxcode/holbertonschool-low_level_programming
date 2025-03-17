@@ -9,8 +9,6 @@
 void print_dog(dog_t* d)
 {
 	if (d == NULL)
-	{
-		printf("nil\n");
 		return;
 }
 
