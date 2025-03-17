@@ -2,9 +2,7 @@
 #include "dog.h"
 /**
 * print_dog - prints a struct dog
-* @name: dog name
-* @age: dog age
-* @owner: owner name
+* @d: ptr to struct dog
 */
 void print_dog(dog_t *d)
 {
