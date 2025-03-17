@@ -6,7 +6,7 @@
 * @age: dog age
 * @owner: owner name
 */
-void print_dog(dog_t* d)
+void print_dog(dog_t *d)
 {
 	if (d == NULL)
 	{
