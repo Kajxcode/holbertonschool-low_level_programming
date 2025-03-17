@@ -18,6 +18,7 @@ void _strcopy(char *dst, char *src)
 
 /**
  * new_dog - create a new dog
+ * _strcopy - copy read-only data to mutable
  * @name: dog name
  * @age: dog age
  * @owner: owner name
