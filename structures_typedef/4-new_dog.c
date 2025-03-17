@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
+
  /**
   * _strcopy - copies a string from source to dest
   * @dst: pointer to copy char to
   * @src: read-only data
   */
-
 void _strcopy(char *dst, char *src)
 {
 	int i;
