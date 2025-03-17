@@ -1,71 +1,60 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-/**
- * new_dog - Creates a new dog struct and copies name and owner
- * @name: anem of dog
- * @age: age of dog
- * @owner: owner name
- */
-int _strlen(char *s)
-{
-	int i = 0, length = 0;
-
-	while (s[i++])
-	{
-		length++;
-	}
-	return (length);
-}
-
-char *_strncpy(char *dest, char *src, int n)
+ /**
+  * _strcopy - copy read-only data to mutable.
+  * @dst: pointer to copy char to.
+  * @src: read-only data.
+  */
+void _strcopy(char *dst, char *src)
 {
 	int i;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
-
-	for (; i < n; i++)
-		dest[i] = '\0';
-
-	return (dest);
+	for (i = 0; src[i]; i++)
+		dst[i] = src[i];
+	dst[i] = '\0';
 }
+
+/**
+ * new_dog - create a new dog
+ * @name: dog name
+ * @age: dog age
+ * @owner: owner name
+ * Return: pointer to the new dog
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
+	int a, b;
 
-	d = malloc(sizeof(dog_t));
+
+	for (a = 0; name[a]; a++)
+		;
+	for (b = 0; owner[b]; b++)
+		;
+
+
+	ouaoua = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
 
-	if (name != NULL)
-	{
-		d->name = malloc(_strlen(name) + 1);
-		if (d->name == NULL)
-		{
-			free(d);
-			return (NULL);
-		}
-		_strncpy(d->name, name);
-	}
-	else
-		d->name = NULL;
 
-	if (owner != NULL)
-	{
-		d->owner = malloc(_strlen(owner) + 1);
-		if (d->owner == NULL)
-		{
-			free(d->name);
-			free(d);
-			return (NULL);
-		}
-		_strncpy(d->owner, owner);
-	}
-	else
-		d->owner = NULL;
+	d->name = malloc(a + 1);
+	d->owner = malloc(b + 1);
 
+	if (d->name == NULL || d->owner == NULL)
+	{
+
+		free(d->name);
+		free(d->owner);
+		free(d);
+		return (NULL);
+	}
+
+
+	_strcopy(d->name, name);
+	_strcopy(d->owner, owner);
 	d->age = age;
 
 	return (d);
