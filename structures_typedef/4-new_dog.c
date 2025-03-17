@@ -8,13 +8,6 @@
  * @src: read-only data
  */
 
-/**
- * new_dog - creates a new dog
- * @name: dog name
- * @age: dog age
- * @owner: owner name
- * Return: pointer to the new dog
- */
 void _strcopy(char *dst, char *src)
 {
 	int i;
@@ -23,7 +16,13 @@ void _strcopy(char *dst, char *src)
 		dst[i] = src[i];
 	dst[i] = '\0';
 }
-
+/**
+* new_dog - creates a new dog
+* @name: dog name
+* @age : dog age
+* @owner : owner name
+* Return : pointer to the new dog
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
