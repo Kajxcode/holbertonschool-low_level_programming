@@ -6,6 +6,12 @@
   * _strcopy - copies a string from source to dest
   * @dst: pointer to copy char to
   * @src: read-only data
+  * 
+  *new_dog - create a new
+  * @name: dog name
+  * @age: dog age
+  * @owner: owner name
+  * Return: pointer to the new dog
   */
 void _strcopy(char *dst, char *src)
 {
@@ -15,19 +21,6 @@ void _strcopy(char *dst, char *src)
 		dst[i] = src[i];
 	dst[i] = '\0';
 }
-/**
- * _strcopy - copies a string from source to dest
- * @dst: pointer to copy char to
- * @src: read-only data
- */
-
-/**
- * new_dog - create a new
- * @name: dog name
- * @age: dog age
- * @owner: owner name
- * Return: pointer to the new dog
- */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -65,8 +58,3 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (d);
 }
-/**
- * _strcopy - copies a string from source to dest
- * @dst: pointer to copy char to
- * @src: read-only data
- */
