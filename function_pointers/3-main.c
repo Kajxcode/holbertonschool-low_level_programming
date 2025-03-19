@@ -1,17 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+/**
+* main - calculates two integers with provided op
+* @argc: argument count
+* @argv: array of arguments
+* Return: 0 success
+*/
+
 int main(int argc, char* argv[])
 {
 	int a, b;
 	int rslt;
 	int (*f)(int, int)
 
-		if (argc != 4)
-		{
-			printf("Error\n");
-			return (98);
-		}
+	if (argc != 4)
+	{
+		printf("Error\n");
+		return (98);
+	}
 
 	a = atoi(argv[1]);
 	b = atoi(agrv[3]);
