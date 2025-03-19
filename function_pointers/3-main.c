@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 {
 	int a, b;
 	int rslt;
-	int (*f)(int, int)
+	int (*f)(int, int);
 
 	if (argc != 4)
 	{
@@ -26,12 +26,12 @@ int main(int argc, char* argv[])
 
 	if (f == NULL || argv[2][1] != "0\")
 	{
-		printf("Error\n")
+		printf("Error\n");
 			return (99);
 	}
 	if (*argv[2] == '/' || *argv[2] == '%') && b == 0)
 	{
-		printf('Error\n')
+		printf('Error\n');
 			return (100);
 	}
 
