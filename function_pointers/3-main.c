@@ -21,10 +21,10 @@ int main(int argc, char* argv[])
 	}
 
 	a = atoi(argv[1]);
-	b = atoi(agrv[3]);
+	b = atoi(argv[3]);
 	f = get_op_func(argv[2]);
 
-	if (f == NULL || argv[2][1] != "0\")
+	if (f == NULL || argv[2][1] != '0\')
 	{
 		printf("Error\n");
 			return (99);
