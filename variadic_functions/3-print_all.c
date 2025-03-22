@@ -44,7 +44,7 @@ void display_float(va_list va)
  */
 void display_string(va_list va)
 {
-	char* la_chaine = va_arg(va, char*);
+	char *la_chaine = va_arg(va, char *);
 	(la_chaine != NULL) ? printf("%s", la_chaine) : printf("(nil)");
 }
 
@@ -54,12 +54,12 @@ void display_string(va_list va)
  * Descritption: This function can print anything
  * Return: void
  */
-void print_all(const char* const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list liste_parametre;
 	int i = 0;
 	int position = 0;
-	char* separator = "";
+	char *separator = "";
 
 	tdisplay display[] = {
 		{'c', display_char},
