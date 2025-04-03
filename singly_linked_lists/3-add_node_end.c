@@ -9,38 +9,33 @@
  * @str: The string to be added as the new node's value
  * Return: The address of the new element, or NULL if it failed
  */
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node,  *current;
+    list_t *new_node;
+    unsigned int len = 0;
 
-	new_node = malloc(sizeof(list_t));
-	if (new_node == NULL)
-		return (NULL);
+    char *dup_str = strdup(str);
 
-	new_node->str = strdup(str);
-	if (new_node->str == NULL)
-	{
-		free(new_node);
-		return (NULL);
-	}
+    if (!dup_str)
+        return (NULL);
 
-	new_node->len = strlen(str);
+    while (dup_str[len])
+        len++;
 
-	new_node->next = NULL;
+    new_node = malloc(sizeof(list_t));
 
-	if (*head == NULL)
-	{
-		*head = new_node;
-	}
-	else
-	{
-		current = *head;
-		while (current->next != NULL)
-		{
-			current = current->next;
-		}
-		current->next = new_node;
-	}
+    if (!new_node)
+    {
+        free(dup_str);
+        return (NULL);
+    }
 
-	return (new_node);
+    new_node->str = dup_str;
+    new_node->len = len;
+    new_node->next = *head;
+
+
+    *head = new_node;
+
+    return (new_node);
 }
