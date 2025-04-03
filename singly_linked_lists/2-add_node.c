@@ -9,10 +9,11 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t* new_node;
+	list_t *new_node;
 	unsigned int len = 0;
 
 	char *dup_str = strdup(str);
+
 	if (!dup_str)
 		return (NULL);
 
