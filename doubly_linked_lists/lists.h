@@ -11,7 +11,7 @@
  * @next: Pointer to the next node
  * Description: Doubly linked list structure for Holberton project
  */
-typedef struct dlistint_t
+typedef struct dlistint_s
 {
 	int n;
 	struct dlistint_s *prev;
